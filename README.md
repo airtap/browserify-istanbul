@@ -2,9 +2,11 @@
 
 A [browserify](http://github.com/substack/node-browserify) transform for the [istanbul](https://github.com/gotwarlost/istanbul) code coverage tool.
 
+**This is a temporary fork that includes [devongovett/browserify-istanbul#45](https://github.com/devongovett/browserify-istanbul/pull/45) until that lands upstream.**
+
 ## Installing
 
-    npm install --save-dev browserify-istanbul
+    npm install --save-dev @airtap/browserify-istanbul
 
 ## Usage
 
@@ -14,7 +16,7 @@ You can use all of these with browserify-istanbul: see the [browserify docs](htt
 There are a few options available to browserify-istanbul when you use it from JavaScript.  They are shown in the following code example:
 
 ```javascript
-var istanbul = require('browserify-istanbul');
+var istanbul = require('@airtap/browserify-istanbul');
 
 // use without any options...
 browserifyBundle.transform(istanbul);
@@ -36,13 +38,13 @@ browserifyBundle.transform(istanbul({
 - without options:
 
 ```
-./node_modules/.bin/browserify -t browserify-istanbul test/test-*.js -o bundle.js
+./node_modules/.bin/browserify -t @airtap/browserify-istanbul test/test-*.js -o bundle.js
 ```
 
 - with options
 
 ```
-./node_modules/.bin/browserify -t [ browserify-istanbul --ignore "**/bower_components/**" ] test/test-*.js -o bundle.js
+./node_modules/.bin/browserify -t [ @airtap/browserify-istanbul --ignore "**/bower_components/**" ] test/test-*.js -o bundle.js
 ```
 
 ### Interacting With Coverage Reports
