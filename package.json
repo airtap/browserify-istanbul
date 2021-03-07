@@ -1,6 +1,6 @@
 {
   "name": "@airtap/browserify-istanbul",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "A browserify transform for the istanbul code coverage tool",
   "main": "index.js",
   "directories": {
