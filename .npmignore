@@ -2,3 +2,7 @@
 coverage/
 test/
 testdata/
+.nyc_output
+.travis.yml
+.editorconfig
+.eslintrc
